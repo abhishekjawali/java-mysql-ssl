@@ -25,7 +25,7 @@ Optional step. JKS file is already created based on RDS CA and included in this 
 
 1. Checkout code
     ```
-    git checkout https://github.com/abhishekjawali/java-mysql-ssl.git
+    git clone https://github.com/abhishekjawali/java-mysql-ssl.git
     ```
 2.  [Optional] If new keystore is generated, then add the file to classpath
 3.  Update the DB credentials in DemoApplication.java
