@@ -9,7 +9,8 @@
 ## Steps to execute
 
 ### Setup JKS 
-Optional step. JKS file is already created based on RDS CA and included in this example. The following steps were followed to setup the JKS file. 
+Optional step. This step is not required to be executed for this example. This can be used as reference when creating a new JKS file.
+JKS file is already created based on RDS CA and included in this example. The following steps were followed to setup the JKS file. 
 
 1. Download RDS CA certificate (rds-ca-2019-root.pem) from https://s3.amazonaws.com/rds-downloads/rds-ca-2019-root.pem
 2. Convert the certificate to .der format
@@ -27,10 +28,16 @@ Optional step. JKS file is already created based on RDS CA and included in this 
     ```
     git clone https://github.com/abhishekjawali/java-mysql-ssl.git
     ```
-2.  [Optional] If new keystore is generated, then add the file to classpath
-3.  Update the DB credentials in DemoApplication.java
-4.  Build the application
+2.  [Optional] If new keystore is generated, then add the file to classpath. For this example, this step can be skipped.
+3.  Update the DB credentials in DemoApplication.java (src/main/java/com/example/demo/DemoApplication.java)
+    a. Replace DB-USER-NAME with the database user name
+    b. Replace DB-PASSWORD with the database password
+    c. Replace DB_URL with the database URL.
+5.  Build the application
     ```
     .\mvnw.cmd clean install
     ```
 5. Run the application. 
+    ```
+    java -jar target\demo-0.0.1-SNAPSHOT.jar
+    ```
