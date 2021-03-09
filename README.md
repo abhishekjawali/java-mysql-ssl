@@ -31,7 +31,9 @@ JKS file is already created based on RDS CA and included in this example. The fo
 2.  [Optional] If new keystore is generated, then add the file to classpath. For this example, this step can be skipped.
 3.  Update the DB credentials in DemoApplication.java (src/main/java/com/example/demo/DemoApplication.java)
     >    a. Replace DB-USER-NAME with the database user name
+    
     >    b. Replace DB-PASSWORD with the database password
+    
     >    c. Replace DB_URL with the database URL.
 5.  Build the application
     ```
