@@ -31,6 +31,7 @@ public class DemoApplication {
 		properties.setProperty("sslMode", "Verify_CA");
 		properties.put("user", DB_USER);
 		properties.put("password", DB_PASSWORD);
+		properties.put("enabledTLSProtocols", "TLSv1.2");
 
 		Connection connection;
 		try {
