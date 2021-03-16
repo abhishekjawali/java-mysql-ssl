@@ -43,3 +43,8 @@ JKS file is already created based on RDS CA and included in this example. The fo
     ```
     java -jar target\demo-0.0.1-SNAPSHOT.jar
     ```
+    
+    
+Notes:
+-Dhttps.protocols=TLSv1.1,TLSv1.2
+System.setProperty("https.protocols", "TLSv1.2,TLSv1.2");
